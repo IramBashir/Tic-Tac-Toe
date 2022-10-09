@@ -10,7 +10,6 @@ function App() {
  const [isXChange, updateIsXChange] = useState(false);
  
  const onSquareClicked = (index) =>{
-  // debugger;
    let currentGameState = Array.from(gameState);
    currentGameState[index] = isXChange ? "X" : "O" ;
    if (!(gameState[index]  === "X" || gameState[index]  === "O"))
@@ -19,7 +18,7 @@ function App() {
       UpdateGameState(currentGameState);
     }
     else {
-      alert ("Bruh!!!!!!!!!!! you can't")
+      alert ("You cannot change this square, Choose another one :)")
     }
  }
  useEffect (() => {
